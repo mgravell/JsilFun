@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26510.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsilFun", "JsilFun\JsilFun.csproj", "{285C0A7B-0687-47F2-A5EA-7050C5D1999E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLib", "TestLib\TestLib.csproj", "{EF018117-B834-49F3-91D1-D78DE1EFC86A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{285C0A7B-0687-47F2-A5EA-7050C5D1999E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{285C0A7B-0687-47F2-A5EA-7050C5D1999E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{285C0A7B-0687-47F2-A5EA-7050C5D1999E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{285C0A7B-0687-47F2-A5EA-7050C5D1999E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF018117-B834-49F3-91D1-D78DE1EFC86A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF018117-B834-49F3-91D1-D78DE1EFC86A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF018117-B834-49F3-91D1-D78DE1EFC86A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF018117-B834-49F3-91D1-D78DE1EFC86A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

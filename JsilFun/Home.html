@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JSIL Test</title>
+</head>
+<body>
+    <p>Everything interesting should be done at the console</p>
+    <pre>var asm = JSIL.GetAssembly("TestLib", true);
+asm.toString()</pre>
+    <p>outputs: &lt;TestLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null Public Interface&gt;</p>
+    <p>however, <code>asm.TestLib</code> is undefined and <code>asm.$typesByName</code> is an empty object</p>
+
+    <script type="text/javascript">
+        var jsilConfig = {
+            libraryRoot: '/js/jsil/',
+            scriptRoot: '/js/testlib/',
+            manifestRoot: '/js/testlib/',
+            manifests: ['TestLib.dll'] // gets as far as Loading '/js/testlib/TestLib.dll.manifest.js'...
+                                       // which is 200 / OK
+        };
+        var asm = null;
+        var runMain = function () { // doesn't get invoked
+            console.log('> main');
+            asm = JSIL.GetAssembly("TestLib", true); // (executed outside method) returns a stub with no content
+            console.log('< main');
+        };
+    </script>
+    <script src="/js/jsil/jsil.js"></script>
+</body>
+</html>
